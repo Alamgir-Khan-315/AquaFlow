@@ -18,7 +18,7 @@ function ContactPage({ theme }) {
   };
 
   return (
-    <div className={`container mx-auto p-12 my-20 transition-all duration-500`}>
+    <div className={`w-full md:container md:h-screen mx-auto p-12 transition-all duration-500 -mb-[10%] md:-mb-[5%]`}>
       <div className={`relative overflow-hidden rounded-3xl shadow-2xl transition-all duration-500 max-w-4xl mx-auto
         ${isDarkMode ? 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-gray-200' : 'bg-gradient-to-br from-white via-blue-50 to-indigo-50 text-gray-800'}`}>
         <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
@@ -27,7 +27,7 @@ function ContactPage({ theme }) {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mb-6">
               <Phone className="w-8 h-8 text-white" />
             </div>
-            <h2 className={`text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent`}>
+            <h2 className={`text-3xl md:text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent`}>
               Contact Us
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
@@ -45,7 +45,7 @@ function ContactPage({ theme }) {
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="-mt-5 space-y-6">
               <div>
                 <label htmlFor="contact-name" className={`block text-lg font-medium mb-2 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Your Name</label>
                 <input
@@ -87,7 +87,7 @@ function ContactPage({ theme }) {
               </div>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-5 px-8 rounded-2xl text-2xl font-bold flex items-center justify-center transition-all duration-300 ease-out hover:shadow-blue-500/25 hover:scale-105 transform shadow-xl"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-8 rounded-2xl text-xl md:text-2xl font-bold flex items-center justify-center transition-all duration-300 ease-out hover:shadow-blue-500/25 hover:scale-105 transform shadow-xl"
               >
                 Send Message
               </button>

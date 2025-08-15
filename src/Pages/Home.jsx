@@ -109,7 +109,7 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen font-sans transition-all duration-500
+    <div className={`font-sans pb-24 md:pb-5 transition-all duration-500
       ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-black text-gray-100' : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-white text-gray-800'}`}>
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} cartItemCount={cartItems.length} theme={theme} toggleTheme={toggleTheme} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

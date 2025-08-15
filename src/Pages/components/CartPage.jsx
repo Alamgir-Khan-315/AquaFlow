@@ -5,7 +5,8 @@ function CartPage({ cartItems, updateCartQuantity, removeFromCart, getTotalAmoun
   const isDarkMode = theme === 'dark';
   
   return (
-    <div className={`container mx-auto p-12 my-20 transition-all duration-500`}>
+   <div className='h-screen flex items-center -my-[5%] '>
+     <div className={`container mx-auto p-12 transition-all duration-500`}>
       <div className={`relative overflow-hidden rounded-3xl shadow-2xl transition-all duration-500
         ${isDarkMode ? 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-gray-200' : 'bg-gradient-to-br from-white via-blue-50 to-indigo-50 text-gray-800'}`}>
         <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
@@ -14,14 +15,14 @@ function CartPage({ cartItems, updateCartQuantity, removeFromCart, getTotalAmoun
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mb-6">
               <ShoppingCart className="w-8 h-8 text-white" />
             </div>
-            <h2 className={`text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent`}>
+            <h2 className={`text-3xl md:text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent`}>
               Your Shopping Cart
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
           
           {cartItems.length === 0 ? (
-            <div className="text-center py-16">
+            <div className="text-center">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 mb-6">
                 <ShoppingCart className="w-10 h-10 text-blue-500" />
               </div>
@@ -102,6 +103,7 @@ function CartPage({ cartItems, updateCartQuantity, removeFromCart, getTotalAmoun
         </div>
       </div>
     </div>
+   </div>
   );
 }
 
