@@ -18,7 +18,7 @@ function ContactPage({ theme }) {
   };
 
   return (
-    <div className={`w-full md:container md:h-screen mx-auto p-12 transition-all duration-500 -mb-[10%] md:-mb-[5%]`}>
+    <div className={`w-full md:container md:h-screen mx-auto py-4 md:p-12 transition-all duration-500 -mb-[10%] md:-mb-[5%]`}>
       <div className={`relative overflow-hidden rounded-3xl shadow-2xl transition-all duration-500 max-w-4xl mx-auto
         ${isDarkMode ? 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-gray-200' : 'bg-gradient-to-br from-white via-blue-50 to-indigo-50 text-gray-800'}`}>
         <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>

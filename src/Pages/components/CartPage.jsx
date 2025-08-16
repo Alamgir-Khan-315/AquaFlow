@@ -6,7 +6,7 @@ function CartPage({ cartItems, updateCartQuantity, removeFromCart, getTotalAmoun
   
   return (
    <div className='h-screen flex items-center -my-[5%] '>
-     <div className={`container mx-auto p-12 transition-all duration-500`}>
+     <div className={`md:container mx-auto py-12 mt-[65%] md:mt-0 md:p-12 transition-all duration-500`}>
       <div className={`relative overflow-hidden rounded-3xl shadow-2xl transition-all duration-500
         ${isDarkMode ? 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-gray-200' : 'bg-gradient-to-br from-white via-blue-50 to-indigo-50 text-gray-800'}`}>
         <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
@@ -31,9 +31,9 @@ function CartPage({ cartItems, updateCartQuantity, removeFromCart, getTotalAmoun
             </div>
           ) : (
             <>
-              <div className="space-y-6">
+              <div className=" space-y-6">
                 {cartItems.map(item => (
-                  <div key={item.id} className={`group relative flex items-center justify-between p-6 rounded-2xl shadow-lg border transition-all duration-300 hover:scale-[1.02] hover:shadow-xl
+                  <div key={item.id} className={`group relative flex flex-col md:flex-row items-center justify-between p-6 rounded-2xl shadow-lg border transition-all duration-300 hover:scale-[1.02] hover:shadow-xl
                     ${isDarkMode ? 'bg-gradient-to-r from-gray-700 to-gray-600 border-gray-600' : 'bg-gradient-to-r from-white to-gray-50 border-gray-200'}`}>
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="relative flex items-center space-x-6">

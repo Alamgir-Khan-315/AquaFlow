@@ -8,6 +8,7 @@ function ProductCard({ product, addToCart, theme }) {
     <div className={`group relative p-8 rounded-3xl flex flex-col items-center text-center transition-all duration-500 hover:scale-105 shadow-xl
       ${isDarkMode ? 'bg-gradient-to-br from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600' : 'bg-gradient-to-br from-white to-gray-50 hover:from-blue-50 hover:to-indigo-50'}`}>
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      
       <div className="relative mb-6">
         <img 
           src={product.image} 

@@ -11,7 +11,7 @@ function HomePage({ products, addToCart, setCurrentPage, theme }) {
     <>
       <HeroSection setCurrentPage={setCurrentPage} theme={theme} />
       <AboutUsSection theme={theme} />
-      <div className={`container mx-auto p-12 md:my-20 rounded-3xl shadow-2xl transition-all duration-500 ${isDarkMode ? 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-gray-200' : 'bg-gradient-to-br from-white via-blue-50 to-indigo-50 text-gray-700'}`}>
+      <div className={`container mx-auto p-12 mb-5 md:my-20 rounded-3xl shadow-2xl transition-all duration-500 ${isDarkMode ? 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-gray-200' : 'bg-gradient-to-br from-white via-blue-50 to-indigo-50 text-gray-700'}`}>
         <div className="text-center md:mb-16">
           <h2 className={`text-3xl md:text-5xl lg:text-6xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent`}>
             Our Refreshing Products
@@ -21,7 +21,7 @@ function HomePage({ products, addToCart, setCurrentPage, theme }) {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-5 md:mt-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map(product => (
             <ProductCard 
               key={product.id} 
